@@ -1,16 +1,31 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    @apply bg-white text-center text-black justify-items-center;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Write your own custom component styles here */
+.btn-green {
+    @apply px-4 py-2 font-bold text-white bg-green-400 rounded-lg lg:justify-items-stretch;
 }
 
-* {
-  box-sizing: border-box;
+.title{
+    @apply text-2xl font-semibold sm:text-2xl sm:leading-7 sm:text-black md:text-4xl;
 }
+
+.subtitle{
+    @apply text-base font-normal sm:text-base sm:leading-7 md:text-xl;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
