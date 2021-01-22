@@ -11,7 +11,7 @@ export default function Profile() {
                         <div className="text-center p-6  border-b">
                             <img
                                 className="h-24 w-24 rounded-full mx-auto"
-                                src="https://avatars3.githubusercontent.com/u/72724639?s=400&u=964a4803693899ad66a9229db55953a3dbaad5c6&v=4"
+                                src="https://www.flaticon.com/svg/vstatic/svg/709/709610.svg?token=exp=1611177737~hmac=d3491ca1b35941d473014abce7c8fb65"
                                 alt="avatar image"
                             />
                             <p className="pt-2 text-lg font-semibold">Name Example</p>

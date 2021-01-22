@@ -5,40 +5,37 @@ import Image from 'next/image'
 
 
 const links = [
-    { href: '/capsules', label: 'Iniciar Sesion' },
-    { href: 'https://nextjs.org/docs', label: 'Registrarme' },
+  { href: '/login', label: 'Iniciar Sesion' },
+  { href: '/logup', label: 'Registrarme' },
 ]
 
 export default function Header() {
-    return (
-      <nav>
-        <ul className="flex items-center justify-between p-8">
-          <li>
-            <Link href="/">
-              <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
-                Flexxo
+  return (
+    <nav className="container flex-1">
+      <ul className="flex items-center justify-between p-6">
+        <li>
+          <Link href="/">
+            <Image
+              src="/../public/images/Logo.png"
+              alt="Capsule for one person"
+              height="40"
+              width="40"
+              className="z-30"
+            />
+          </Link>
+          <div className="relative col-span-3 row-span-2 md:col-span-2">
+          </div>
+        </li>
+        <ul className="flex items-center justify-between space-x-4 z-30">
+          {links.map(({ href, label }) => (
+            <li key={`${href}${label}`}>
+              <a href={href} className="no-underline ">
+                {label}
               </a>
-            </Link>
-            <div className="relative col-span-3 row-span-2 md:col-span-2">
-              <Image
-                src="/public/images/pbc1.png."
-                alt="Picture of the author"
-                width={15}
-                height={15}
-                className="absolute inset-0 object-cover w-full h-full bg-gray-100 sm:rounded-lg"
-              />
-            </div>
-          </li>
-          <ul className="flex items-center justify-between space-x-4 ">
-            {links.map(({ href, label }) => (
-              <li key={`${href}${label}`}>
-                <a href={href} className="no-underline btn-blue">
-                  {label}
-                </a>
-              </li>
-                    ))}
-          </ul>
+            </li>
+          ))}
         </ul>
-      </nav>
-    )
+      </ul>
+    </nav>
+  )
 }

@@ -1,14 +1,16 @@
 import Capsule from '../components/capsule'
 import Container from '../components/container'
+import Front from '../components/front'
+import Remote from '../components/remote'
 
 export default function Home() {
-    return (
-      <div> 
-        <Container>
-          <h1 className="title">Home</h1>
-        </Container>
-      </div>
-    )
+  return (
+    <div>
+      <Container>
+        <Front />
+      </Container>
+    </div>
+  )
 }
 
 
@@ -32,4 +34,4 @@ export default function Home() {
         </header>
 
 
-        */
+*/
