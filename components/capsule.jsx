@@ -40,10 +40,10 @@ export default function Capsule({ capsule, people, location, children }) {
           <div className="w-full grid grid-cols-3 grid-rows-2 gap-2">
             <div className="relative col-span-3 row-span-2 md:col-span-2">
               <Image
-                src="/../public/images/pbc1.png"
+                src="/images/pbc1.png"
                 alt="Capsule for one person"
-                width={300}
-                height={300}
+                width="300"
+                height="300"
                 className="absolute inset-0 object-cover w-full h-full bg-gray-100 sm:rounded-lg"
               />
             </div>
@@ -60,7 +60,7 @@ const MoreImages = () => {
     <>
       <div className="relative hidden md:block">
         <Image
-          src="/../public/images/pbc1.png"
+          src="/images/pbc1.png"
           alt="Capsule for one person"
           width={150}
           height={150}
@@ -69,7 +69,7 @@ const MoreImages = () => {
       </div>
       <div className="relative hidden md:block">
         <Image
-          src="/../public/images/pbc1.png"
+          src="/images/pbc1.png"
           alt="Capsule for one person"
           width={150}
           height={150}

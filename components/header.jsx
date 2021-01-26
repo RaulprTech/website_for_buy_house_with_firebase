@@ -15,7 +15,7 @@ export default function Header() {
         <li>
           <Link href="/">
             <Image
-              src="/../public/images/Logo.png"
+              src="/images/Logo.png"
               alt="Capsule for one person"
               height="40"
               width="40"

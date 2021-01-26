@@ -9,7 +9,7 @@ export default function Front() {
         <div>
             <div className="">
                 <Image
-                    src="../public/images/background.png"
+                    src="/images/background.png"
                     alt="background with the work flexxo"
                     layout="fill"
                     className="z-10 max-h-30"
@@ -29,7 +29,7 @@ export default function Front() {
                     </header>
                     <div className="flex flex-col place-items-start text-sm font-medium text-center mt-20 z-40">
                         <Image
-                            src="/../public/images/FLEXXO.svg"
+                            src="/images/FLEXXO.svg"
                             alt="Capsule for one person"
                             height="80"
                             width="200"
