@@ -9,10 +9,10 @@ export default function schedule() {
             <div className=" overflow-y-scroll scroll-hidden relative min-w-full h-screen content-center">
                 <Nav />
                 <Dates>
-                    <div className="mt-6">
-                        <h2 >Selecciona el horario</h2>
+                    <div className="mt-6 visible sm:invisible md:invisible lg:invisible">
+                        <h2 className="visible sm:invisible md:invisible lg:invisible">Selecciona el horario</h2>
                     </div>
-                    <div className="h-full w-full pt-6 overflow-y-auto" >
+                    <div className="w-full pt-6 overflow-y-auto" >
                         <div className="grid grid-cols-1 lg:grid-cols-2  lg:gap-x-8 lg:py-12 border-black">
                             <Hour />
                             <Hour />

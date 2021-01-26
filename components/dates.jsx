@@ -36,7 +36,7 @@ export default function Dates(props) {
                     </svg>
                 </div>
             </div>
-            <div className="mx-auto overflow-y-scroll scroll-hidden relative min-w-full h-screen content-center">
+            <div className="mx-auto overflow-y-scroll scroll-hidden relative min-w-full content-center">
                 {props.children}
             </div>
             <div className="py-4">

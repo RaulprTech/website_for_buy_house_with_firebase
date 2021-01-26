@@ -9,7 +9,7 @@ export default function Front() {
         <div>
             <div className="">
                 <Image
-                    src="/../public/images/background.png"
+                    src="../public/images/background.png"
                     alt="background with the work flexxo"
                     layout="fill"
                     className="z-10 max-h-30"
