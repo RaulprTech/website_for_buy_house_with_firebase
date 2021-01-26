@@ -1,5 +1,6 @@
 import Capsule from '../components/capsule'
 import Container from '../components/container'
+import Link from 'next/link'
 
 
 
@@ -17,12 +18,13 @@ export default function capsules() {
 
 const Button = () => (
     <>
-        <button
-            type="button"
-            className="btn-green"
-        >
-            Reservar
+        <Link href="/schedule">
+            <button
+                type="button"
+                className="btn-green"
+            >
+                Reservar
         </button>
+        </Link>
     </>
 )
-

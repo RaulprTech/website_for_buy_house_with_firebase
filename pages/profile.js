@@ -29,7 +29,7 @@ export default function Profile() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="flex justify-items-center flex-col flex-1 mt-8">
+                        <div className="flex justify-items-center flex-col flex-1 mt-8 mx-auto">
                             <a href="#" className="px-4 py-2 pb-4 hover:bg-gray-100 flex">
                                 <p className="text-sm font-medium text-gray-800 leading-none">Ayuda</p>
                             </a>

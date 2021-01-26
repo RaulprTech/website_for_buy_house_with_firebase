@@ -11,7 +11,7 @@ export default function Capsule({ capsule, people, location, children }) {
               <h2 className="title">
                 {capsule}
               </h2>
-              <div className="flex items-center pb-4 md:pb-8 text-sm font-medium text-gray-700">
+              <div className="flex items-center pb-4 text-sm font-medium text-gray-700">
                 <svg
                   width="25"
                   height="25"
@@ -23,7 +23,7 @@ export default function Capsule({ capsule, people, location, children }) {
                 <h3 className="subtitle ml-2">{people}</h3>
               </div>
             </div>
-            <div className="flex items-center pb-4 md:pb-8 text-sm font-medium text-gray-700">
+            <div className="flex items-center pb-4 text-sm font-medium text-gray-700">
               <svg
                 width="25"
                 height="25"

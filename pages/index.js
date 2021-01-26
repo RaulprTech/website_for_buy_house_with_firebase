@@ -1,15 +1,18 @@
+import { Suspense } from 'react'
+import { FirebaseAppProvider, useFirebaseApp } from 'reactfire'
 import Capsule from '../components/capsule'
 import Container from '../components/container'
 import Front from '../components/front'
 import Remote from '../components/remote'
 
+
 export default function Home() {
   return (
-    <div>
-      <Container>
-        <Front />
-      </Container>
-    </div>
+
+    <Container>
+      <Front />
+    </Container>
+
   )
 }
 

@@ -3,7 +3,6 @@ import Image from 'next/image'
 
 
 
-
 const links = [
   { href: '/login', label: 'Iniciar Sesion' },
   { href: '/logup', label: 'Registrarme' },
@@ -11,7 +10,7 @@ const links = [
 
 export default function Header() {
   return (
-    <nav className="container flex-1">
+    <nav className="container flex-1 mx-auto">
       <ul className="flex items-center justify-between p-6">
         <li>
           <Link href="/">

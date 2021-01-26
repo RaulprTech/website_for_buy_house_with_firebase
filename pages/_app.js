@@ -1,10 +1,14 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-props-no-spreading */
 import '../styles/globals.css'
-import React from 'react'
+import React, { Suspense } from 'react'
+import firebaseConfig from '../firebaseConfig'
+import { FirebaseAppProvider } from 'reactfire'
+
 
 function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
+    return (
+        <FirebaseAppProvider firebaseConfig={firebaseConfig}>
+            <Component {...pageProps} />
+        </FirebaseAppProvider>)
 }
 
 export default MyApp
