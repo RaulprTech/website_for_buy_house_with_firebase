@@ -21,7 +21,7 @@ body {
 
 /* Write your own custom component styles here */
 .btn-green {
-    @apply px-4 py-2 md:py-3 lg:py-3 font-bold text-xl text-white bg-green-500 rounded-lg lg:justify-items-stretch focus:not-sr-only;
+    @apply px-4 py-2 font-bold text-xl text-white bg-green-500 rounded-lg md:py-3 lg:py-3;
 }
 
 .btn-white{
