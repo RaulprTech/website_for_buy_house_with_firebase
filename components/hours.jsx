@@ -17,8 +17,8 @@ export default function hours() {
 
 function Hour({ minutes }) {
     return (
-        <button className="bg-white rounded-md hover:text-white hover:bg-green-500 m-2">
-            <p className="px-3 py-1 text-xs font-normal">{minutes}</p>
+        <button className="bg-white rounded-md hover:text-white hover:bg-green-500 m-1">
+            <p className="px-2 py-1 text-xs font-normal">{minutes}</p>
         </button>
     )
 }
