@@ -1,14 +1,17 @@
 import '../styles/globals.css'
-import React, { Suspense } from 'react'
-import firebaseConfig from '../firebaseConfig'
-import { FirebaseAppProvider } from 'reactfire'
+import React from 'react'
+import Container from '../components/Container'
+import { ProvideAuth } from "../hooks/useAuth";
 
 
 function MyApp({ Component, pageProps }) {
     return (
-        <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-            <Component {...pageProps} />
-        </FirebaseAppProvider>)
+        <ProvideAuth>
+            <Container>
+                <Component {...pageProps} />
+            </Container>
+        </ProvideAuth>
+    )
 }
 
 export default MyApp

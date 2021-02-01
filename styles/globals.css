@@ -14,18 +14,42 @@ body {
     @apply bg-white text-center text-black justify-items-center;
 }
 
+/* Spinner class */ 
+@keyframes loader-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loader {
+    border-right-color: transparent;
+    animation: loader-rotate 1s linear infinite;
+}
+
+/* show scroll  */
 .scroll-hidden::-webkit-scrollbar {
     height: 0px;
     background: transparent; /* make scrollbar transparent */
   }
 
+  .toggle__dot {
+    transition: all 0.3s ease-in-out;
+}
+
+input:checked ~ .toggle__dot {
+    transform: translateX(100%);
+    background-color:#68D391
+}
+
 /* Write your own custom component styles here */
 .btn-green {
-    @apply px-4 py-2 font-bold text-xl text-white bg-green-500 rounded-lg md:py-3 lg:py-3;
+    @apply px-4 py-2 font-bold text-xl text-white bg-primary rounded-lg md:py-3 lg:py-3 hover:shadow-md focus-within:outline-none;
 }
 
 .btn-white{
-    @apply px-4 py-2 md:px-12 md:py-2 font-bold text-gray-600 bg-white rounded-lg lg:justify-items-stretch;
+    @apply px-4 py-2 md:px-12 md:py-2 font-bold text-gray-600 bg-white rounded-lg lg:justify-items-stretch focus-within:outline-none;
 }
 
 .title{
