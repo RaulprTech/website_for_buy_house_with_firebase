@@ -5,7 +5,7 @@ var serviceAccount = require("path/to/serviceAccountKey.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://flexxo-dev-default-rtdb.firebaseio.com"
+    databaseURL: "firebase-adminsdk-ljp0i@organizer-345c5.iam.gserviceaccount.com"
 });
 
 export const database = admin.database();

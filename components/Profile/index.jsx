@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { USER_STATES } from '../../hooks/useUser'
+import firebase from 'firebase'
+import { loginWithGoogle, logoutWithGoogle } from '../../firebase/client'
 
 export default function Profile({ user }) {
     console.log(user)
@@ -51,9 +53,9 @@ export default function Profile({ user }) {
                     <a href="#" className="px-4 py-2 pb-4 hover:bg-gray-100 flex">
                         <p className="text-sm font-medium text-gray-800 leading-none">Legal</p>
                     </a>
-                    <a href="#" className="px-4 py-2 pb-4 hover:bg-gray-100 flex">
-                        <p className="text-sm font-medium text-gray-800 leading-none">Cerrar Sesión</p>
-                    </a>
+                    <span href="#" className="px-4 py-2 pb-4 hover:bg-gray-100 flex">
+                        <p className="text-sm font-medium text-gray-800 leading-none" onClick={logoutWithGoogle}>Cerrar Sesión</p>
+                    </span>
                 </div>
             </div>
         </div>

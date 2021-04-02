@@ -31,7 +31,7 @@ export default function Bookings({ data }) {
                 booths.map((booth, i) => {
                     return (
                         <div>
-                            <Capsule key={i} capsule={booth.code} people={howPeople(booth.code)} img={data.photo} location="Aeropuerto de Puebla">
+                            <Capsule key={i} capsule={booth.code} people="1" img="" location="Aeropuerto de Puebla">
                                 <Button code={booth.code} />
                             </Capsule>
                         </div>

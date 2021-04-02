@@ -5,6 +5,8 @@ import es from 'dayjs/locale/es'
 
 import Hours from './hours'
 import useToggle from '../../hooks/useToggle'
+import { useRouter } from 'next/router'
+
 
 
 
@@ -143,15 +145,18 @@ const Day = ({ today, dateToday, state }) => {
 
 
 
-const Continuar = () => (
-    <>
-        <Link href="/schedule">
+const Continuar = () => {
+    const router = useRouter()
+
+    return (
+        <>
             <button
                 type="button"
                 className="btn-green min-w-full"
+                onClick={() => router.push('/booking/PCB2/01-febrero-2021/21:00/21:15')}
             >
                 Continuar
         </button>
-        </Link>
-    </>
-)
+        </>
+    )
+}

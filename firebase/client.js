@@ -1,14 +1,13 @@
 import firebase from 'firebase'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAb42q41W0gH-0OHLPw6mOHcvQoGFFfwtE",
-    authDomain: "flexxo-dev.firebaseapp.com",
-    databaseURL: "https://flexxo-dev-default-rtdb.firebaseio.com",
-    projectId: "flexxo-dev",
-    storageBucket: "flexxo-dev.appspot.com",
-    messagingSenderId: "462526675458",
-    appId: "1:462526675458:web:6156527a55904bd5e1051b",
-    measurementId: "G-E04VE4YK0W"
+    apiKey: "AIzaSyAVqS7aoUzWym-4lShhqXIBbFlb3mX3chI",
+    authDomain: "organizer-345c5.firebaseapp.com",
+    projectId: "organizer-345c5",
+    storageBucket: "organizer-345c5.appspot.com",
+    messagingSenderId: "129998149603",
+    appId: "1:129998149603:web:841943151a3ffac3dfb2d6",
+    measurementId: "G-4C7WKV46JD"
 };
 
 !firebase.apps.length && firebase.initializeApp(firebaseConfig);
@@ -47,6 +46,14 @@ export const loginWithGoogle = () => {
         .auth()
         .signInWithPopup(googleProvider)
     //        .then(mapUserFromFirebaseAuthToUser)
+}
+
+export function logoutWithGoogle() {
+    firebase.auth().signOut().then(() => {
+        // Sign-out successful.
+    }).catch((error) => {
+        // An error happened.
+    });
 }
 
 //Data the all booths

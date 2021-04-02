@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { loginWithGoogle, onAuthStateChanged } from '../../firebase/client'
+import { USER_STATES } from '../../hooks/useUser';
 
 
 export default function SigInWithGoogle() {
@@ -23,11 +24,7 @@ export default function SigInWithGoogle() {
     return (
         <div>
             {
-                console.log("actualizada informacion" + user)
-
-            }
-            {
-                user === null &&
+                user === USER_STATES.NOT_LOGGED &&
                 <button onClick={handleClickGoogle} className="font-ligth text-xl w-full max-w-sm mx-auto px-4 py-2 rounded-lg text-gray-600 bg-gray-200 shadow-sm hover:shadow-md"   >
                     Ingresa con Google
                 </button>
