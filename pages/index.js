@@ -1,15 +1,11 @@
-import Capsule from '../components/capsule'
-import Container from '../components/container'
-import Front from '../components/front'
-import Remote from '../components/remote'
+import Front from '../components/Home'
+
 
 export default function Home() {
   return (
-    <div>
-      <Container>
-        <Front />
-      </Container>
-    </div>
+
+    <Front />
+
   )
 }
 

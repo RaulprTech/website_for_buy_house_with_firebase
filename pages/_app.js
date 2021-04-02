@@ -1,10 +1,17 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-props-no-spreading */
 import '../styles/globals.css'
 import React from 'react'
+import Container from '../components/Container'
+import { ProvideAuth } from "../hooks/useAuth";
+
 
 function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
+    return (
+        <ProvideAuth>
+            <Container>
+                <Component {...pageProps} />
+            </Container>
+        </ProvideAuth>
+    )
 }
 
 export default MyApp
