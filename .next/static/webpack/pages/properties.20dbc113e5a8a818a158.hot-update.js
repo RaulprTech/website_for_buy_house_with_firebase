@@ -1,0 +1,15 @@
+webpackHotUpdate_N_E("pages/properties",{
+
+/***/ "./data/house/house.json":
+/*!*******************************!*\
+  !*** ./data/house/house.json ***!
+  \*******************************/
+/*! exports provided: slug, title, description, houses, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"slug\":\"properties\",\"title\":\"Casas en Venta\",\"description\":\"Lista de casas en venta\",\"houses\":[{\"name\":\"Casa del lago # 12\",\"description\":\"Hermosa residencia ubicada a orillas del bello lago de san ignacio\",\"type\":\"Residencial\",\"src\":\"/imgs/properties\",\"Rooms\":4,\"Bathrooms\":2,\"near\":[\"lago\",\"parque\",\"gimnasio\"],\"place\":\"Merida, Yucatan\"},{\"name\":\"Casa verde de Caucel # 23\",\"description\":\"Hermosa residencia ubicada en zona residencial muy segura\",\"type\":\"Residencial\",\"src\":\"/imgs/properties\",\"Rooms\":4,\"Bathrooms\":2,\"near\":[\"escuela\",\"parque\",\"centro\"]},{\"name\":\"Departamento Espacioso\",\"description\":\"Bello departamento cerca del centro de la universidad estatal, ideal para estudiantes\",\"type\":\"Residencial\",\"src\":\"/imgs/properties\",\"Rooms\":4,\"Bathrooms\":2,\"near\":[\"centro\",\"parque\",\"escuela\",\"gimnasio\"]},{\"name\":\"Casa del lago # 12\",\"description\":\"Hermosa residencia ubicada a orillas del bello lago de san ignacio\",\"type\":\"Residencial\",\"src\":\"/imgs/properties\",\"Rooms\":4,\"Bathrooms\":2,\"near\":[\"lago\",\"parque\",\"gimnasio\"]},{\"name\":\"Casa verde de Caucel # 23\",\"description\":\"Hermosa residencia ubicada en zona residencial muy segura\",\"type\":\"Residencial\",\"src\":\"/imgs/properties\",\"Rooms\":4,\"Bathrooms\":2,\"near\":[\"escuela\",\"parque\",\"centro\"]},{\"name\":\"Departamento Espacioso\",\"description\":\"Bello departamento cerca del centro de la universidad estatal, ideal para estudiantes\",\"type\":\"Residencial\",\"src\":\"/imgs/properties\",\"Rooms\":4,\"Bathrooms\":2,\"near\":[\"centro\",\"parque\",\"escuela\",\"gimnasio\"]},{\"name\":\"Casa del lago # 12\",\"description\":\"Hermosa residencia ubicada a orillas del bello lago de san ignacio\",\"type\":\"Residencial\",\"src\":\"/imgs/properties\",\"Rooms\":4,\"Bathrooms\":2,\"near\":[\"lago\",\"parque\",\"gimnasio\"]},{\"name\":\"Casa verde de Caucel # 23\",\"description\":\"Hermosa residencia ubicada en zona residencial muy segura\",\"type\":\"Residencial\",\"src\":\"/imgs/properties\",\"Rooms\":4,\"Bathrooms\":2,\"near\":[\"escuela\",\"parque\",\"centro\"]},{\"name\":\"Departamento Espacioso\",\"description\":\"Bello departamento cerca del centro de la universidad estatal, ideal para estudiantes\",\"type\":\"Residencial\",\"src\":\"/imgs/properties\",\"Rooms\":4,\"Bathrooms\":2,\"near\":[\"centro\",\"parque\",\"escuela\",\"gimnasio\"]}]}");
+
+/***/ })
+
+})
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdGF0aWMvd2VicGFjay9wYWdlcy9wcm9wZXJ0aWVzLjIwZGJjMTEzZTVhOGE4MThhMTU4LmhvdC11cGRhdGUuanMiLCJzb3VyY2VSb290IjoiIn0=

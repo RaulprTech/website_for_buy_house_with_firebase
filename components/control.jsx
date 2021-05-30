@@ -1,7 +1,7 @@
 export default function Control({ hour }) {
     return (
         <div className="container mt-20">
-            <div className="m-4 py-4 px-2 bg-primary text-white rounded-xl mb-10">
+            <div className="m-4 py-4 px-2 bg-green-500 text-white rounded-xl mb-10">
                 <div className="container flex justify-center items-center">
                     <h2 className="title text-xl mr-8 py-4">Abrir Puerta</h2>
                     <div className="">

@@ -1,5 +1,5 @@
 {
-  "name": "flexxo-web",
+  "name": "house-for-sale",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,25 +8,24 @@
     "start": "next start"
   },
   "dependencies": {
-    "autoprefixer": "^10.2.1",
     "dayjs": "^1.10.4",
     "firebase": "^8.2.4",
     "firebase-admin": "^9.4.2",
     "next": "10.0.5",
-    "postcss": "^8.2.3",
     "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "tailwindcss": "^2.0.2"
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
     "eslint": "^7.17.0",
-    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-tailwind": "^0.2.0",
-    "prettier": "2.2.1"
+    "postcss": "^8.2.9",
+    "prettier": "2.2.1",
+    "tailwindcss": "^2.0.4"
   }
 }

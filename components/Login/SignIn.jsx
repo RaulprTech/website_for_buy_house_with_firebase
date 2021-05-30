@@ -25,10 +25,10 @@ export default function login() {
                 <div className="bg-white space-y-6">
                     <div className="space-y-4 w-full p-4 text-gray-500 items-center">
                         <Image
-                            src="/images/FLEXXO.svg"
-                            alt="Capsule for one person"
+                            src="/images/for-sale.png"
+                            alt="Casa roja con letrero de en venta"
                             height="120"
-                            width="260"
+                            width="120"
                             className=""
                         />
                         <div className="md:w-2/3 max-w-sm mx-auto">
@@ -87,7 +87,7 @@ export default function login() {
                         </div>
 
                         <ButtonLarge title="Continuar" style="btn-green w-full mx-auto max-w-sm rounded-lg py-2 px-4 focus:outline-none" />
-                        <ButtonLarge title="¡Registrate aqui!" style="font-ligth text-xl w-full max-w-sm mx-auto px-4 py-2 rounded-lg border border-primary text-primary shadow-sm hover:shadow-lg" />
+                        <ButtonLarge title="¡Registrate aqui!" style="font-ligth text-xl w-full max-w-sm mx-auto px-4 py-2 rounded-lg border border-green-500 text-green-500 shadow-sm hover:shadow-lg" />
                         <div className="mt-4">
                             o
                         </div>

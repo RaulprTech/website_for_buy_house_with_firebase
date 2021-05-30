@@ -1,33 +1,48 @@
-import Front from '../components/Home'
+import React from "react"
 
+import Header from "../components/Landing/Header"
+import Mensaje from "../components/Landing/Caracteristica"
+
+import Advantage from "../components/Landing/Advantage"
+import Nav from "../components/Nav"
+import Property from "../components/Property"
+
+import Container from "../components/Container"
+import recomentations from "../data/house/recomentations.json"
+import { property } from "lodash"
 
 export default function Home() {
   return (
-
-    <Front />
-
+    <div>
+      <Header />
+      <div className="">
+        <h1 className="mt-12 text-3xl font-bold leading-tight text-gray-900">
+          Casas en la Playa cerca de ti
+        </h1>
+        <div className="flex justificy-center mt-8 overflow-x-scroll scroll-hidden">
+          {
+            recomentations.playa.map((house) => (
+              <Property data={house}/>
+            ))
+          }
+        </div>
+      </div>
+      <Mensaje
+        title="Busqueda confiable"
+        message="Nos aseguramos de verificar que cada oferta sea real y este vigente para que tu proceso de busqueda sea lo mas agradable posible."
+        illustration="/imgs/house_searching.svg"
+      />
+      <Mensaje
+        title="Panorama completo"
+        message="Te damos acceso a la informacion mas relevante de las propiedades para que puedas tomar la decision mas asertada."
+        illustration="/imgs/select_house.svg"
+      />
+      <Mensaje
+        title="Compra 100% digital"
+        message="Todo el proceso es a traves de nuestra plataforma, desde la busqueda hasta la firma del contrato. Todo completamente seguro para que tu no tengas que preocuparte de nada mas que encontrar tu nuevo hogar"
+        illustration="/imgs/buy_house.svg"
+      />
+      <Advantage />
+    </div>
   )
 }
-
-
-
-
-/*
-
-
-      <header className="flex items-center justify-center p-6 text-sm font-medium text-black">
-          <svg
-            width="50"
-            height="50"
-            fill="currentColor"
-            className="text-violet-600"
-          >
-            <path d="M9.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118l-2.8-2.034c-.784-.57-.381-1.81.587-1.81H7.03a1 1 0 00.95-.69L9.05 3.69z" />
-          </svg>
-          <h2 className="text-center title ml-14">
-            Selecciona una cápsula
-          </h2>
-        </header>
-
-
-*/

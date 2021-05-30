@@ -1,21 +1,25 @@
-import Nav from './nav'
-import { useState, useEffect } from 'react';
+import Nav from "./nav"
+import Image from "next/image"
 
-import useUser from '../../hooks/useUser'
+import { useState, useEffect } from "react"
 
+import useUser from "../../hooks/useUser"
 
+import Banner from "../Landing/Banner"
 
 export default function Container(props) {
-  const user = useUser();
-
+  const user = useUser()
 
   return (
-    <div className="rounded-xl shadow-lg overflow-hidden relative min-w-full h-screen content-center">
-      <Nav user={user}>
-        <div className="bg-white h-full w-full px-5 pt-6 pb-20 overflow-y-auto" >
-          {props.children}
-        </div>
-      </Nav>
-    </div>
+    <>
+      <div className="overflow-hidden relative min-w-full h-screen content-center">
+        <Banner />
+        <Nav user={user}>
+          <div className="h-full w-full pb-20 overflow-y-scroll mx-auto pb-6">
+            {props.children}
+          </div>
+        </Nav>
+      </div>
+    </>
   )
 }

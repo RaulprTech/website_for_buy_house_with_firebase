@@ -9,14 +9,14 @@ export default function MobileNav({ user }) {
 
     const linksLogin = [
         { href: '/', label: 'Inicio' },
-        { href: '/booking', label: 'Cápsulas' },
+        { href: '/explore', label: 'Explorar' },
         { href: '/tickets/123', label: 'Mis Reservas' },
         { href: `/profile/123`, label: 'Perfil' }
     ]
     //${user.uid}
     const linksLogout = [
         { href: '/', label: 'Inicio' },
-        { href: '/booking', label: 'Cápsulas' },
+        { href: '/explore', label: 'Explorar' },
         { href: '/login', label: 'Iniciar Sesión' }
     ]
 

@@ -1,5 +1,7 @@
 /* purgecss start ignore */
 
+/* ! tailwindcss v2.0.4 | MIT License | https://tailwindcss.com */
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
@@ -442,15 +444,18 @@ textarea {
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
   color: #9ca3af;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
   color: #9ca3af;
 }
 
 input::placeholder,
 textarea::placeholder {
+  opacity: 1;
   color: #9ca3af;
 }
 
@@ -597,6 +602,36 @@ html, body {
   color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
+/* Spinner class */
+
+@-webkit-keyframes loader-rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border-right-color: transparent;
+  -webkit-animation: loader-rotate 1s linear infinite;
+          animation: loader-rotate 1s linear infinite;
+}
+
+/* show scroll  */
+
 .scroll-hidden::-webkit-scrollbar {
   height: 0px;
   background: transparent; /* make scrollbar transparent */
@@ -615,11 +650,19 @@ input:checked ~ .toggle__dot {
 
 .btn-green {
   --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgba(177, 193, 53, var(--tw-bg-opacity));
   border-radius: 0.5rem;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.btn-green:focus-within {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.btn-green {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -655,6 +698,14 @@ input:checked ~ .toggle__dot {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   border-radius: 0.5rem;
   font-weight: 700;
+}
+
+.btn-white:focus-within {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.btn-white {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -11492,6 +11543,10 @@ input:checked ~ .toggle__dot {
   cursor: move;
 }
 
+.cursor-help {
+  cursor: help;
+}
+
 .cursor-not-allowed {
   cursor: not-allowed;
 }
@@ -19344,7 +19399,6 @@ input:checked ~ .toggle__dot {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -43174,6 +43228,10 @@ input:checked ~ .toggle__dot {
     cursor: move;
   }
 
+  .sm\:cursor-help {
+    cursor: help;
+  }
+
   .sm\:cursor-not-allowed {
     cursor: not-allowed;
   }
@@ -51026,7 +51084,6 @@ input:checked ~ .toggle__dot {
   }
 
   .sm\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -74774,6 +74831,10 @@ input:checked ~ .toggle__dot {
     cursor: move;
   }
 
+  .md\:cursor-help {
+    cursor: help;
+  }
+
   .md\:cursor-not-allowed {
     cursor: not-allowed;
   }
@@ -82626,7 +82687,6 @@ input:checked ~ .toggle__dot {
   }
 
   .md\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -106374,6 +106434,10 @@ input:checked ~ .toggle__dot {
     cursor: move;
   }
 
+  .lg\:cursor-help {
+    cursor: help;
+  }
+
   .lg\:cursor-not-allowed {
     cursor: not-allowed;
   }
@@ -114226,7 +114290,6 @@ input:checked ~ .toggle__dot {
   }
 
   .lg\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -137974,6 +138037,10 @@ input:checked ~ .toggle__dot {
     cursor: move;
   }
 
+  .xl\:cursor-help {
+    cursor: help;
+  }
+
   .xl\:cursor-not-allowed {
     cursor: not-allowed;
   }
@@ -145826,7 +145893,6 @@ input:checked ~ .toggle__dot {
   }
 
   .xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -169574,6 +169640,10 @@ input:checked ~ .toggle__dot {
     cursor: move;
   }
 
+  .\32xl\:cursor-help {
+    cursor: help;
+  }
+
   .\32xl\:cursor-not-allowed {
     cursor: not-allowed;
   }
@@ -177426,7 +177496,6 @@ input:checked ~ .toggle__dot {
   }
 
   .\32xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
