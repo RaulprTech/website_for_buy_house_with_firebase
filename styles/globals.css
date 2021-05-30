@@ -1,0 +1,107 @@
+/* purgecss start ignore */
+
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+
+html,
+body {
+    @apply bg-white text-center text-black justify-items-center;
+}
+
+/* Spinner class */ 
+@keyframes loader-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loader {
+    border-right-color: transparent;
+    animation: loader-rotate 1s linear infinite;
+}
+
+/* show scroll  */
+.scroll-hidden::-webkit-scrollbar {
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+
+.toggle__dot {
+    transition: all 0.3s ease-in-out;
+}
+
+input:checked ~ .toggle__dot {
+    transform: translateX(100%);
+    background-color:#68D391
+}
+
+/* Write your own custom component styles here */
+.btn-green {
+    @apply px-4 py-2 font-bold text-xl text-white bg-green-500 rounded-lg md:py-3 lg:py-3 hover:shadow-md focus-within:outline-none;
+}
+
+.btn-white{
+    @apply px-4 py-2 md:px-12 md:py-2 font-bold text-blue-600 bg-white rounded-lg lg:justify-items-stretch focus-within:outline-none;
+}
+
+.title{
+    @apply text-2xl font-semibold sm:text-2xl sm:leading-7 sm:text-black md:text-4xl;
+}
+
+.subtitle{
+    @apply text-base font-medium sm:text-xl sm:leading-7 md:text-2xl;
+}
+
+/* .image{
+    background-image: url("/public/images/space.webp");
+    height: 800px;
+    width: 800px;
+    margin: auto;
+} */
+
+body {
+    @apply bg-white;
+  }
+  
+  .btn {
+    @apply bg-green-500 text-white rounded border-blue-700 py-2 px-4 border-b-4;
+  }
+  
+  .link {
+    @apply block text-white font-bold;
+  }
+  
+  .repos-list {
+    columns: 2;
+    -moz-columns: 2;
+    column-rule: 1px solid;
+    @apply p-4;
+  }
+  
+  .repos-list li {
+    break-inside: avoid-column;
+  }
+  
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    @apply bg-blue-200 text-purple-700 text-xs p-2 inline-block;
+  }
+  
+
+/* purgecss end ignore */
+
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
