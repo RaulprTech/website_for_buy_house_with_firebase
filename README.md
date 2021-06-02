@@ -1,5 +1,5 @@
 
-# This is a **Next.js** project of blog with **dev.to** 
+# This is a visula interface for a ecommers of sell house
 
 ## Getting Started
 
